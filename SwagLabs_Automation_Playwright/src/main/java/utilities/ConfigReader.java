@@ -12,11 +12,14 @@ public class ConfigReader {
 	 * This method will return data from properties file
 	 * 
 	 */
+	String configFile=System.getProperty("user.dir")+"//src//test//resources//Config.properties";
 	public Properties initProp() {
 			prop=new Properties();
+			
+			
 			try {
 				
-				FileInputStream fi=new FileInputStream("./src/test/resources/config.properties");
+				FileInputStream fi=new FileInputStream(configFile);
 				prop.load(fi);
 			} catch (FileNotFoundException e) {
 				

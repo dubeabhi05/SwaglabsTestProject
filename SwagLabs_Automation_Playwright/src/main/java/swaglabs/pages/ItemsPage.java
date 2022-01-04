@@ -1,6 +1,8 @@
 package swaglabs.pages;
 
 import org.junit.Assert;
+import testbase.BasePage;
+import testbase.CommonUtilities;
 
 import com.microsoft.playwright.Page;
 
@@ -9,20 +11,27 @@ public class ItemsPage extends BasePage {
 	
 	private static final String cartBtn = "#shopping_cart_container > a";
 	private static final String checkoutBtn = "[data-test=\"checkout\"]";
+	 private static CommonUtilities commonutil =new CommonUtilities();
 	public ItemsPage(Page page) {
 		this.page = page;
 	}
     
 	
 	public void orderProduct(String ProductName) {
-	    click("//div[text()='" + ProductName + "']/following::button[1]");
-		click(cartBtn);
+		commonutil.click("//div[text()='" + ProductName + "']/following::button[1]");
+		commonutil.click(cartBtn);
 		Assert.assertTrue(page.isVisible("text="+ProductName));
-		click(checkoutBtn);
+		commonutil.click(checkoutBtn);
 	}
 
-	public void loginSuccessful() {
-		Assert.assertTrue(page.isVisible("text=Products"));
+	public boolean loginSuccessful() {
+		boolean loginState = page.isVisible("text=Products");
+		commonutil.takeScreenshot("LoginSucessful");
+		return loginState;
+		//Assert.assertTrue(page.isVisible("text=Products"));
 	}
+	public String getHomePageTitle() {
+		 return page.title();
+	  }
 	
 }

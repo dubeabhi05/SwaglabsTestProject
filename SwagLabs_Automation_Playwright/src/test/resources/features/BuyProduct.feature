@@ -11,4 +11,4 @@ Feature: Buy Product
 
     Examples:
       | UserName         | Password     | Product                   | FirstName    | LastName  | Zipcode   |
-      | standard_user    | secret_sauce | Sauce Labs Fleece Jacket  | Asbhishek    | Dubey     | 400701    | 
+      | standard_user    | secret_sauce | Sauce Labs Fleece Jacket  | Abhishek     | Dubey     | 400701    | 

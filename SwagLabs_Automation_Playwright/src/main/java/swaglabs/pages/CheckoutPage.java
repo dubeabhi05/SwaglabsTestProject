@@ -1,11 +1,13 @@
 package swaglabs.pages;
 
 import java.nio.file.Paths;
-import java.util.Date;
 
 import org.junit.Assert;
 
 import com.microsoft.playwright.Page;
+
+import testbase.BasePage;
+import testbase.CommonUtilities;
 
 public class CheckoutPage extends BasePage{
 
@@ -17,7 +19,7 @@ public class CheckoutPage extends BasePage{
 	private static final String continueBtn = "//input[@id='continue']";
 	private static final String finishBtn = "//button[@id='finish']";
 	private static final String successfulStatusMsg = "//h2[contains(text(),'THANK YOU FOR YOUR ORDER')]";
-	
+	private static CommonUtilities commonutil =new CommonUtilities();
 
 	public CheckoutPage(Page page) { 
 		this.page = page;
@@ -26,25 +28,24 @@ public class CheckoutPage extends BasePage{
 	public void fillCheckoutDetails(String firstname,String lastname, String postalcode)
 	{
 		
-		fillData(firstName, firstname);
-		fillData(lastName, lastname);
-		fillData(postalCode, postalcode);
+		commonutil.fillData(firstName, firstname);
+		commonutil.fillData(lastName, lastname);
+		commonutil.fillData(postalCode, postalcode);
 	}
 
 	public void completeCheckout() {
-		click(continueBtn);
-		click(finishBtn);
+		commonutil.click(continueBtn);
+		commonutil.click(finishBtn);
 	}
 
-	public void checkoutSuccessful() {
-		//boolean visible =page.isVisible(successfulStatusMsg);
-		Assert.assertTrue(getPage().isVisible(successfulStatusMsg));
-		//Assert.assertTrue(visible);
-		page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("CheckoutSuccessful.png")));
+	public boolean checkoutSuccessful() {
+		boolean checkoutState =page.isVisible(successfulStatusMsg);
+		commonutil.takeScreenshot("CheckoutSuccessful");
+		return checkoutState;
 	}
 
 	public void cancelCheckout() {
-		click(cancelBtn);
+		commonutil.click(cancelBtn);
 
 	}
 

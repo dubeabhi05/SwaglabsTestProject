@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import swaglabs.pages.BasePage;
+import testbase.BasePage;
 import testbase.MyLogger;
 import utilities.ConfigReader;
 

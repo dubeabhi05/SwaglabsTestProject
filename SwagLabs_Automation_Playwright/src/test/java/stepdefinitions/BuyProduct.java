@@ -1,8 +1,10 @@
 package stepdefinitions;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import swaglabs.pages.BasePage;
+import testbase.BasePage;
 import swaglabs.pages.CheckoutPage;
 import swaglabs.pages.ItemsPage;
 import swaglabs.pages.LoginPage;
@@ -32,7 +34,7 @@ public class BuyProduct extends BasePage   {
 	}
 	@Then("User should get the Confirmation of Order")
 	public void user_should_get_the_confirmation_of_order() {
-	    checkoutPage.checkoutSuccessful();
+		Assert.assertTrue(checkoutPage.checkoutSuccessful());
 	}
 
 

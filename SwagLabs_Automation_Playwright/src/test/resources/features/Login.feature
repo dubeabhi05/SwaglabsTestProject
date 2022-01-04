@@ -4,11 +4,12 @@ Feature: Login
   Scenario Outline: Login to SwagLabs Application with Correct credentials
     Given User launched SwagLabs application
     When User logged in the app using username "<UserName>" and password "<Password>"
-    Then user should be able to log in
+    Then user should be able to log in 
+    And ItemPage title should be "<Title>"
 
     Examples:
-      | UserName           | Password     |
-      | standard_user      | secret_sauce |
+      | UserName           | Password     | Title     |
+      | standard_user      | secret_sauce | Swag Labs |
       
 @LoginW 
   Scenario Outline: Login to SwagLabs Application with Wrong credentials

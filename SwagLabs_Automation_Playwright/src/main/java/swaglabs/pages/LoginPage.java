@@ -1,15 +1,17 @@
 package swaglabs.pages;
 
 import org.junit.Assert;
+import testbase.BasePage;
+import testbase.CommonUtilities;
 
 import com.microsoft.playwright.Page;
 
 public class LoginPage extends BasePage {
-	
+	   
 	    private static final String userName = "//input[@id='user-name']";
 	    private static final String userPassword = "//input[@id='password']";
 	    private static final String btnLogin = "//input[@id='login-button']";
-
+	    private static CommonUtilities commonutil =new CommonUtilities();
 
 	Page page;
 	
@@ -18,14 +20,20 @@ public class LoginPage extends BasePage {
      }
 	  
 	  public void login(String username,String password) {
-	      fillData(userName, username);
-	      fillData(userPassword, password);
-	      click(btnLogin);
+	      commonutil.fillData(userName, username);
+	      commonutil.fillData(userPassword, password);
+	      commonutil.click(btnLogin);
 	}
+	 
+	  public String getHomePageTitle() {
+		 return page.title();
+	  }
 	
-	public void loginFailed() {
+	public boolean loginFailed() {
 		boolean visible = page.isVisible("//h3[text()='Epic sadface: Sorry, this user has been locked out.']");
-		Assert.assertTrue(visible);
+		commonutil.takeScreenshot("loginFailed");
+		return visible;
+	
 	}
 	
 	 
