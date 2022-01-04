@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import swaglabs.pages.BasePage;
+import testbase.MyLogger;
 import utilities.ConfigReader;
 
 public class Hooks extends BasePage{
@@ -14,7 +15,7 @@ public class Hooks extends BasePage{
 	BasePage basePage;
 	Properties prop;
 	private ConfigReader configReader;
-	public static final Logger logger=LogManager.getLogger(Hooks.class);
+	
 	
 	
 	@Before(order =0)
@@ -26,10 +27,12 @@ public class Hooks extends BasePage{
 
 	@Before (order =1)
 	public void launchBrowser() {
+		
+		MyLogger.info("Launch Browser");
 		String browserName=prop.getProperty("browser");
 		String baseUrlName = prop.getProperty("applicationUrl");
 		basePage = new BasePage();
-		logger.info("Browser Initiate");
+		MyLogger.info("Browser Initiate");
 		basePage.createPageInstance(browserName);
         page.navigate(baseUrlName);
 	}
@@ -39,7 +42,7 @@ public class Hooks extends BasePage{
 	public void closeBrowser() {
 		//page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("example.png")));
 		basePage.closePageInstance();
-		logger.info("Close browser");
+		MyLogger.info("Close browser");
 	}
 
 }

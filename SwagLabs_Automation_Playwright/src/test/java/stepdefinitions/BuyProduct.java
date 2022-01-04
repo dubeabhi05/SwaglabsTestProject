@@ -1,7 +1,5 @@
 package stepdefinitions;
 
-
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import swaglabs.pages.BasePage;
@@ -12,15 +10,10 @@ import swaglabs.pages.LoginPage;
 public class BuyProduct extends BasePage   {
 	
 
-	LoginPage loginPage;
-	ItemsPage itemsPage;
-	CheckoutPage checkoutPage;
 	
-	public BuyProduct() {
-		loginPage = new LoginPage(page);
-		itemsPage = new ItemsPage(page);
-		checkoutPage=new CheckoutPage(page);
-	}
+	private LoginPage loginPage=new LoginPage(page);
+	private ItemsPage itemsPage=new ItemsPage(page);
+	private CheckoutPage checkoutPage=new CheckoutPage(page);
 		    
 		
 	@When("User adds {string} product to the cart")
