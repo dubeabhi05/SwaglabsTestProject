@@ -25,10 +25,7 @@ public class LoginPage extends BasePage {
 	      commonutil.click(btnLogin);
 	}
 	 
-	  public String getHomePageTitle() {
-		 return page.title();
-	  }
-	
+	  
 	public boolean loginFailed() {
 		boolean visible = page.isVisible("//h3[text()='Epic sadface: Sorry, this user has been locked out.']");
 		commonutil.takeScreenshot("loginFailed");

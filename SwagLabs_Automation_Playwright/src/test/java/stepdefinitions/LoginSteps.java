@@ -12,7 +12,7 @@ import testbase.CommonUtilities;
 import swaglabs.pages.CheckoutPage;
 import swaglabs.pages.ItemsPage;
 import swaglabs.pages.LoginPage;
-import testbase.MyLogger;
+import utilities.Log;
 
 
 public class LoginSteps extends BasePage{
@@ -25,21 +25,21 @@ public class LoginSteps extends BasePage{
 	@Given("User launched SwagLabs application")
 	public void user_launched_swag_labs_application() {
 		System.out.println("Page title is :"+page.title());
-		MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
-		MyLogger.info("Test execution in progress");
+		
+		Log.info("I am at the login page");
 	}
 	
 
 	@When("User logged in the app using username {string} and password {string}")
 	public void user_logged_in_the_app_using_username_and_password(String username, String password) {
-		MyLogger.info("Enetr Username and Password");
+		Log.info("Enter Username and Password");
 		loginPage.login(username, password);
 	}
 
 	
 	@Then("user should be able to log in")
 	public void user_should_be_able_to_log_in() {
-		MyLogger.info("Login Sucessfull");
+		Log.info("Login Sucessfull");
 		Assert.assertTrue(itemsPage.loginSuccessful());
 	}
 	
@@ -50,7 +50,7 @@ public class LoginSteps extends BasePage{
 
 	@Then("User should not get logged in")
 	public void user_should_not_get_logged_in() {
-		MyLogger.info("Login failed");
+		Log.info("Login failed");
 		Assert.assertTrue(loginPage.loginFailed());
 		
 	}
