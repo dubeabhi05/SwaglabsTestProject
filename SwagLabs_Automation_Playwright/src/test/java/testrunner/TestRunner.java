@@ -1,20 +1,22 @@
 package testrunner;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-import org.junit.runner.RunWith;
-
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-
-@RunWith(Cucumber.class)
-@CucumberOptions( monochrome = true,
+//@RunWith(Cucumber.class)
+@CucumberOptions( 
         features = "src/test/resources/features/",
         glue = {"stepdefinitions","hooks"},
-        plugin = {"pretty",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber","junit:target/junitreport.xml","json:target/jsonreport.json","html:target/cucumber-reports",
-}
+        		plugin = { "pretty",
+                        "me.jvt.cucumber.report.PrettyReports:target/cucumber", "junit:target/junitreport.xml",
+                        "json:target/jsonreport.json", "html:target/cucumber-reports"
+        },
+        		
+        		
+        monochrome = true,publish = true 
+        
         
 )
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests{
 	
 	
 }

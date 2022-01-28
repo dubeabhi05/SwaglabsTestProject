@@ -1,0 +1,63 @@
+[INFO ] 2022-01-20 11:23:37.217 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:23:41.220 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:23:41.226 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:23:41.229 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:23:41.419 [main] Log  - Add product to the cart
+[INFO ] 2022-01-20 11:23:41.617 [main] Log  - Add Checkut Details
+[INFO ] 2022-01-20 11:23:41.732 [main] Log  - Complete Checkout
+[INFO ] 2022-01-20 11:23:41.844 [main] Log  - Verify the confirmation of order
+[INFO ] 2022-01-20 11:23:42.037 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:23:42.097 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:23:43.036 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:23:43.043 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:23:43.044 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:23:43.248 [main] Log  - Login Sucessfull
+[INFO ] 2022-01-20 11:23:43.638 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:23:43.674 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:23:44.838 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:23:44.847 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:23:44.847 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:23:45.024 [main] Log  - Login failed
+[INFO ] 2022-01-20 11:23:45.199 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:26:40.550 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:26:43.835 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:26:43.843 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:26:43.846 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:26:44.047 [main] Log  - Add product to the cart
+[INFO ] 2022-01-20 11:26:44.231 [main] Log  - Add Checkut Details
+[INFO ] 2022-01-20 11:26:44.321 [main] Log  - Complete Checkout
+[INFO ] 2022-01-20 11:26:44.451 [main] Log  - Verify the confirmation of order
+[INFO ] 2022-01-20 11:26:44.642 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:26:44.706 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:26:45.721 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:26:45.729 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:26:45.730 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:26:45.933 [main] Log  - Login Sucessfull
+[INFO ] 2022-01-20 11:26:46.245 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:26:46.308 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:26:47.491 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:26:47.498 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:26:47.500 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:26:47.658 [main] Log  - Login failed
+[INFO ] 2022-01-20 11:26:47.821 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:27:28.053 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:27:30.496 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:27:30.505 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:27:30.508 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:27:30.715 [main] Log  - Add product to the cart
+[INFO ] 2022-01-20 11:27:31.115 [main] Log  - Add Checkut Details
+[INFO ] 2022-01-20 11:27:31.206 [main] Log  - Complete Checkout
+[INFO ] 2022-01-20 11:27:31.314 [main] Log  - Verify the confirmation of order
+[INFO ] 2022-01-20 11:27:31.480 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:27:31.536 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:27:32.729 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:27:32.739 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:27:32.740 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:27:32.933 [main] Log  - Login Sucessfull
+[INFO ] 2022-01-20 11:27:33.379 [main] Log  - Tests are ending!
+[INFO ] 2022-01-20 11:27:33.416 [main] Log  - Tests are starting!
+[INFO ] 2022-01-20 11:27:34.560 [main] Log  - Test execution in progress
+[INFO ] 2022-01-20 11:27:34.567 [main] Log  - I am at the login page
+[INFO ] 2022-01-20 11:27:34.568 [main] Log  - Enter Username and Password
+[INFO ] 2022-01-20 11:27:34.730 [main] Log  - Login failed
+[INFO ] 2022-01-20 11:27:34.907 [main] Log  - Tests are ending!

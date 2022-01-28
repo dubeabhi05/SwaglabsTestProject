@@ -1,6 +1,6 @@
 Feature: Login
     
-@Login
+@Smoke
   Scenario Outline: Login to SwagLabs Application with Correct credentials
     Given User launched SwagLabs application
     When User logged in the app using username "<UserName>" and password "<Password>"
@@ -11,7 +11,7 @@ Feature: Login
       | UserName           | Password     | Title     |
       | standard_user      | secret_sauce | Swag Labs |
       
-@LoginW 
+@Smoke
   Scenario Outline: Login to SwagLabs Application with Wrong credentials
     Given User launched SwagLabs application
     When User logged in the app using username "<UserName>" and password "<Password>"
