@@ -25,7 +25,7 @@ public class BuyProduct extends BasePage   {
 	public void user_adds_product_to_the_cart(String product) {
 		//Log.info("Add product to the cart");
 		itemsPage.orderProduct(product);
-	   
+	   System.out.println("New Commit");
 	}
 	@When("User enters Checkout details with {string}, {string}, {string}")
 	public void user_enters_checkout_details_with(String firstname, String lastname, String postalcode) {
